@@ -20,6 +20,15 @@ void Function::changeTerm(unsigned short index, double coefficient, double varia
 	// Virtual function to be overridden in derived classes
 }
 
+double Function::power(double base, unsigned short exponent){
+	if(exponent == 0) return 1.0;
+	double result = base;
+	for(unsigned short i = 1; i < exponent; i++){
+		result *= base;
+	}
+	return result;
+}
+
 void Function::clear(){
 	// Virtual function to be overridden in derived classes
 }

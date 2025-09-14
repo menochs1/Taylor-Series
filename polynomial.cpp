@@ -52,7 +52,7 @@ void Polynomial::changeTerm(unsigned short index, double coefficient, unsigned s
 double Polynomial::evaluate(double variableValue){
 	double result = 0.0;
 	for(unsigned short i = 0; i < getNumOfTerms(); i++){
-		result += this->terms[i].coefficient * pow(variableValue, this->terms[i].exponent);
+		result += this->terms[i].coefficient * power(variableValue, this->terms[i].exponent);
 	}
 	return result;
 }

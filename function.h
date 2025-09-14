@@ -10,6 +10,7 @@ public:
     virtual void addTerm(double coefficient, double variableValue, unsigned short exponent);
     virtual void removeTerm(unsigned short index);
     virtual void changeTerm(unsigned short index, double coefficient, double variable, unsigned short exponent);
+    double power(double base, unsigned short exponent);
     virtual void clear();
     virtual void print();
 
